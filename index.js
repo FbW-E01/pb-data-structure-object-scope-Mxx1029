@@ -22,11 +22,16 @@ const person = {
     },
     // bonus task
     getLength() { 
-        const size = Object.keys(person).length;
-        console.log(size);
+        let counter = 0;
+        for (const prop in person) {
+            counter++;
+        };
+        console.log(counter);
+        // alternative solution for bonus task
+        //const size = Object.keys(person).length;
+        //console.log(size);
     },
 };
 
 person.printSentence();
 person.getLength();
-
