@@ -20,6 +20,7 @@ const person = {
     printSentence() {
         console.log(`${this.firstName} ${this.lastName} is an ${this.age} years old ${this.job} living in ${this.residence}.`);
     },
+    // bonus task
     getLength() { 
         const size = Object.keys(person).length;
         console.log(size);
